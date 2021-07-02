@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/538af86eaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>About</title>
+    <script src="js/main.js" defer></script>
+    <script src="./js/cv.js" defer></script>
+
+    <style>
+      /* Internal Styling for the cv button */
+      /* I have used internal css here to style a component that already has styling in external css. I am overwriting it here with a different style. And I only need to use it here.*/
+      #cv {
+        margin-top: 2rem;
+        background-color: aqua;
+        transition: 0.5s ease-in;
+        border-radius: 5px;
+      }
+      #cv:hover {
+        background-color: #ffbc00;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <!-- logo -->
+          <a href="index.html" style="border: none">
+            <img src="img/logo.png" alt="My Portfolio" id="logo" />
+          </a>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="current">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="cv-container invisible">
+      <div class="closeBtn">Close</div>
+      <img src="./img/CV.jpg" alt="" />
+    </div>
+
+    <!-- Section A: Info -->
+    <section id="about-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Let me tell you a little about myself and what I do...
+        </p>
+        <div class="about-info">
+          <!-- My photo -->
+          <img src="img/about.jpg" alt="" class="bio-image" />
+          <div class="bio bg-light">
+            <h4>Your Project Is In Safe Hands</h4>
+            <!-- About me -->
+            <p>
+              I am a very friendly and energetic individual, who ensures that
+              pepole receive the best service and satisfaction. In my past role
+              as a Office Support , I worked hard to achieve the best results
+              daily, ensuring that my daily tasks of greeting and serving
+              students and teachers, assisting with queries, keeping computer
+              lab tidy were of the optimum standards. I am a fantastic people
+              person, with great communication and listening skills, therefore,
+              I am able to successfully assist people with any requirements or
+              requests they may have at the place of work. I perform extremely
+              well in a team, as well as alone as I am able to confidently deal
+              with problems, and use my confidence and well balanced emotional
+              intelligence to overcome challenging situations. My previous
+              experience in handling Students and Teachers, coupled with my
+              interest and enthusiasm makes me the ideal candidate for this
+              role.
+            </p>
+            <a class="btn-light" id="cv">My CV</a
+            ><!--My CV-->
+          </div>
+          <!-- Awards -->
+          <div class="award-1">
+            <i class="fas fa-award fa-3x"></i>
+            <h3>Upcoming Star</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+              saepe.
+            </p>
+          </div>
+          <div class="award-2">
+            <i class="fas fa-award fa-3x"></i>
+            <h3>Best Supportor</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+              saepe.
+            </p>
+          </div>
+          <div class="award-3">
+            <i class="fas fa-award fa-3x"></i>
+            <h3>Most Influenticial</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+              saepe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Progress Bars -->
+    <section id="about-b" class="bg-dark py-3">
+      <div class="container">
+        <h2 class="section-title">Key Strengths</h2>
+        <div class="bottom-line"></div>
+        <h4>Leadership:</h4>
+        <div class="progress">
+          <div style="width: 100%"></div>
+        </div>
+        <h4>Creativity:</h4>
+        <div class="progress">
+          <div style="width: 80%"></div>
+        </div>
+        <h4>Planning:</h4>
+        <div class="progress">
+          <div style="width: 70%"></div>
+        </div>
+        <h4>Administration:</h4>
+        <div class="progress">
+          <div style="width: 100%"></div>
+        </div>
+        <h4>Customer Satisfaction:</h4>
+        <div class="progress">
+          <div style="width: 80%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll To Top Button -->
+    <button class="topBtn" id="returnTop">
+      <i class="fas fa-angle-up fa-3x"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content">
+        <div class="container">
+          <p>Copyright Gyanendra &copy; 2021. All Rights Reserved</p>
+          <div class="social">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
